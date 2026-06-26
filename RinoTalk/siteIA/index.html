@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RinoTalk | Quiz de idiomas</title>
+    <meta
+      name="description"
+      content="RinoTalk é uma experiência de quiz de idiomas com atividades, resposta imediata e pontuação final."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#atividade" aria-label="RinoTalk início">
+        <img src="./logo.png" alt="RinoTalk" />
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#atividade">Atividade</a>
+        <a href="#idiomas">Idiomas</a>
+        <a href="#telas">Telas</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="quiz-hero" id="atividade">
+        <div class="quiz-copy">
+          <p class="eyebrow">Aprenda. Pratique. Conquiste o mundo.</p>
+          <h1>Escolha um idioma e faça o desafio do RinoTalk.</h1>
+          <p>
+            Responda cinco perguntas rápidas. No final, sua pontuação aparece
+            como nas telas do app.
+          </p>
+          <div class="score-preview" aria-label="Pontuação possível">
+            <span>Até</span>
+            <strong>1000</strong>
+            <span>pontos</span>
+          </div>
+        </div>
+
+        <section class="quiz-panel" aria-label="Quiz de idiomas">
+          <div class="quiz-topbar">
+            <img src="./logo footer.png" alt="RinoTalk" />
+            <div>
+              <span id="currentFlag" aria-hidden="true">🇬🇧</span>
+              <strong id="currentLanguage">Inglês</strong>
+            </div>
+          </div>
+
+          <div class="quiz-progress">
+            <span id="progressLabel">Pergunta 1 de 5</span>
+            <div aria-hidden="true">
+              <span id="progressFill"></span>
+            </div>
+          </div>
+
+          <div class="quiz-stage" id="quizStage">
+            <p class="activity-label" id="activityLabel">Traduza a palavra</p>
+            <h2 id="questionText">Como se diz "casa" em inglês?</h2>
+            <div class="answer-grid" id="answerGrid"></div>
+            <p class="feedback" id="feedback" aria-live="polite"></p>
+          </div>
+
+          <div class="result-stage" id="resultStage" hidden>
+            <img src="./congratulations (1).png" alt="Mascote RinoTalk comemorando" />
+            <p class="activity-label">Atividade finalizada</p>
+            <h2 id="resultTitle">Sua pontuação:</h2>
+            <strong id="finalScore">0 pontos</strong>
+            <p id="resultMessage"></p>
+            <div class="result-actions">
+              <button class="primary-button" type="button" id="retryButton">Tentar novamente</button>
+              <button class="secondary-button" type="button" id="nextLanguageButton">Outro idioma</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="language-section" id="idiomas">
+        <div class="section-heading">
+          <p class="eyebrow">Idiomas</p>
+          <h2>Escolha sua próxima atividade.</h2>
+        </div>
+        <div class="language-picker" aria-label="Idiomas disponíveis">
+          <button class="lang-card active" type="button" data-lang="english">
+            <span aria-hidden="true">🇬🇧</span>
+            <strong>Inglês</strong>
+          </button>
+          <button class="lang-card" type="button" data-lang="italian">
+            <span aria-hidden="true">🇮🇹</span>
+            <strong>Italiano</strong>
+          </button>
+          <button class="lang-card" type="button" data-lang="german">
+            <span aria-hidden="true">🇩🇪</span>
+            <strong>Alemão</strong>
+          </button>
+          <button class="lang-card" type="button" data-lang="chinese">
+            <span aria-hidden="true">🇨🇳</span>
+            <strong>Chinês</strong>
+          </button>
+          <button class="lang-card" type="button" data-lang="french">
+            <span aria-hidden="true">🇫🇷</span>
+            <strong>Francês</strong>
+          </button>
+          <button class="lang-card" type="button" data-lang="spanish">
+            <span aria-hidden="true">🇪🇸</span>
+            <strong>Espanhol</strong>
+          </button>
+        </div>
+      </section>
+
+      <section class="screens-section" id="telas">
+        <div class="section-heading">
+          <p class="eyebrow">Referência visual</p>
+          <h2>As atividades seguem a linguagem das telas do app.</h2>
+        </div>
+        <div class="phone-gallery" aria-label="Telas do aplicativo">
+          <img
+            class="phone-shot"
+            src="./Captura de tela 2026-06-19 014246.png"
+            alt="Tela de seleção de idiomas do RinoTalk"
+          />
+          <img
+            class="phone-shot"
+            src="./Captura de tela 2026-06-19 014253.png"
+            alt="Tela de atividade finalizada com pontuação alta"
+          />
+          <img
+            class="phone-shot"
+            src="./Captura de tela 2026-06-19 014306.png"
+            alt="Tela de tentativa com pontuação e incentivo"
+          />
+          <img
+            class="phone-shot"
+            src="./Captura de tela 2026-06-19 014316.png"
+            alt="Tela de gráfico de evolução mensal"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="./logo.png" alt="RinoTalk" />
+      <p>Aprenda. Pratique. Conquiste o mundo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
